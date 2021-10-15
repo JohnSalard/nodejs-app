@@ -1,0 +1,9 @@
+versions: '3.8'
+  services:
+    app:
+      build: .
+      container_name: nodejs-app
+      port:
+      - 3000:3000
+      env_file:
+      - ./env/.env
